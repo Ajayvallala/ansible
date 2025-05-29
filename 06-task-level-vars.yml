@@ -13,7 +13,7 @@
      TRAINER: Shivakumar
     ansible.builtin.debug:
      msg: "Hello iam learing {{ COURSE }} Duration {{ DURATION }} Trainer {{ TRAINER }}"
-  - name: task level variables
+  - name: Play level variables
     ansible.builtin.debug:
      msg: "Hello i am learning {{ COURSE }} Duration {{ DURATION }} Trainer {{ TRAINER }}"
     
