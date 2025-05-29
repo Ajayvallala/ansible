@@ -1,0 +1,9 @@
+- name: Calling Variables Using File
+  hosts: local
+  connection: local
+  vars_file:
+  - course.vars
+  tasks:
+  - name: Using Variables from File
+    ansible.builtin.debug:
+     msg: "Hello i am learing {{ COURSE }} Duration {{ DURATION }} Trainer {{ TRAINER}}"
