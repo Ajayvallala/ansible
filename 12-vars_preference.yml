@@ -12,7 +12,7 @@
   tasks:
    name: whishing Greetings
    ansible.builtin.debug:
-    msg: {{ GREETING }}
+    msg: "{{ GREETING }}"
     
      
 
