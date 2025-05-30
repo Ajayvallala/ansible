@@ -1,5 +1,5 @@
 - name: Variables from specific hosts
-  hosts: frontend
+  hosts: Target
   tasks:
   - name: printing course information
     ansible.builtin.debug:
