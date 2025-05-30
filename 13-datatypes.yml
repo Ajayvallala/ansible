@@ -2,16 +2,16 @@
   hosts: local
   connection: local
   vars:
-   DURATION: 100
-   COURSE: "AWS with DevOps"
-   IS_LIVE: true
-   TOOLS:
+   DURATION: 100               # Number variable
+   COURSE: "AWS with DevOps"   # String
+   IS_LIVE: true               # Boolean
+   TOOLS:                      # List []
    - Linux
    - Git
    - Ansible
-   CONCEPTS: 
-    CI: "Jenkins CIRCLE-CI"
-    Scripting: "Linux,Ansible,Python"
+   CONCEPTS:                   # Dictionary or map or object, reffred as { }
+    CI: "Jenkins, Circle-CI"
+    Scripting: "Linux, Ansible, Python"
   tasks:
   - name: Printing course information
     ansible.builtin.debug:
