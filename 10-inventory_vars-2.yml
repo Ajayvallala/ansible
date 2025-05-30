@@ -1,0 +1,6 @@
+- name: Variables from specific hosts
+  hosts: frontend
+  tasks:
+  - name: printing course information
+    ansible.builtin.debug:
+     msg: "Hello iam learing {{ COURSE }} Duration {{ DURATION }} Trainer {{ TRAINER }}"
