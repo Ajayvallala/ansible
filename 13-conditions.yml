@@ -7,7 +7,7 @@
     private: false
   tasks:
   - name: Print if number is lessthan or equal to 100
-    when: Number | int < 100
+    when: Number | int <= 100
     ansible.builtin.debug:
      msg: "Given number {{ Number }} is lessthan or equal to 100"
 
