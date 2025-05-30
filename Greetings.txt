@@ -1,1 +1,1 @@
-GREETING=Hello from file
+GREETING="Hello from file"
