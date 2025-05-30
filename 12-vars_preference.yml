@@ -3,8 +3,8 @@
   connection: local
   vars:
    GREETING: "Hello from play"
-  vars_files:
-  - Greetings.txt
+  #vars_files:
+  #- Greetings.txt
   vars_prompt:
   - name: GREETING
     prompt: Enter your Greetings
