@@ -1,0 +1,19 @@
+- name: Datatypes in Ansible
+  hosts: local
+  connection: local
+  vars:
+   Duration: 100
+   Course: "AWS with DevOps"
+   IS_Live: true
+   Tools:
+   - Linux
+   - Git
+   - Ansible
+   Concepts: 
+    CI: Jenkins
+    Scripting: "Linux, Ansible, Python"
+  tasks:
+  - name: Printing course information
+    ansible.builtin.debug:
+     msg: "Course is {{ course }} Dutation {{ Duration }}HR, is live? {{ IS_Live }} tools {{ Tools }} Conecpts {{ Concepts }}
+
