@@ -10,9 +10,9 @@
    prompt: Wish your Greetings
    private: false
   tasks:
-   name: whishing Greetings
-   ansible.builtin.debug:
-    msg: "{{ GREETING }}"
+  - name: whishing Greetings
+    ansible.builtin.debug:
+     msg: "{{ GREETING }}"
     
      
 
