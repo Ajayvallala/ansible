@@ -1,0 +1,19 @@
+- name: Variable Preferences
+  hosts: local
+  connection: local
+  vars:
+   GREETING: Hello from play
+  vars_files:
+   Greetings.txt
+  vars_prompt:
+   name: GREETING
+   prompt: Wish your Greetings
+   private: false
+  tasks:
+   name: whishing Greetings
+   ansible.builtin.debug:
+    msg: {{ GREETING }}
+    
+     
+
+
