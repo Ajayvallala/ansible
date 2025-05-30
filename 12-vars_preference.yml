@@ -2,15 +2,17 @@
   hosts: local
   connection: local
   vars:
-   GREETING: Hello from play
-  vars_file:
-   Greetings.txt
+   GREETING: "Hello from play"
+  vars_files:
+  - Greetings.txt
   vars_prompt:
-   name: GREETING
-   prompt: Wish your Greetings
-   private: false
+  - name: GREETING
+    prompt: Enter your Greetings
+    private: false
   tasks:
-  - name: whishing Greetings
+  - name: Print the Greetings
+    vars:
+     GREETING: "Hello from task"
     ansible.builtin.debug:
      msg: "{{ GREETING }}"
     
