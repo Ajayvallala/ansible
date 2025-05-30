@@ -2,18 +2,18 @@
   hosts: local
   connection: local
   vars:
-   Duration: 100
-   Course: "AWS with DevOps"
-   IS_Live: true
-   Tools:
+   DURATION: 100
+   COURSE: "AWS with DevOps"
+   IS_LIVE: true
+   TOOLS:
    - Linux
    - Git
    - Ansible
-   Concepts: 
-    CI: Jenkins
-    Scripting: "Linux, Ansible, Python"
+   CONCEPTS: 
+    CI: "Jenkins CIRCLE-CI"
+    Scripting: "Linux,Ansible,Python"
   tasks:
   - name: Printing course information
     ansible.builtin.debug:
-     msg: "Course is {{ Course }} Dutation {{ Duration }}HR, is live? {{ IS_Live }} tools {{ Tools }} Conecpts {{ Concepts }}"
+     msg: "Course is {{ COURSE }} Dutation {{ DURATION }}HR, is live? {{ IS_LIVE }} tools {{ TOOLS }} Conecpts {{ CONCEPTS }}"
 
