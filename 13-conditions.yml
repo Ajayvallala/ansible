@@ -1,8 +1,10 @@
 - name: conditions demo
   hosts: local
   connection: local
-  vars:
-  - Number: 67
+  vars_prompt:
+  - name: Number
+    prompt: Please enter any number
+    private: false
   tasks:
   - name: Print if number is lessthan or equal to 100
     when: Number < 100
