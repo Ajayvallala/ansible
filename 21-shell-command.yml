@@ -3,6 +3,8 @@
   tasks:
   - name: command mudule
     ansible.builtin.command: "ls -ltr"
-  
-
+    register: command_result
+    ansible.builtin.debug:
+     msg: "{{ command_result }}"
+     
 
