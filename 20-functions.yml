@@ -11,6 +11,15 @@
   - name: printing names in list format
     ansible.builtin.debug:
      msg: Hello "{{ person | split(',') }}"
+
+  - name: conver map to list
+    vars:
+     information:
+      Name: Ajay
+      Age: 27
+      Gender: Male
+    ansible.builtin.debug:
+     msg: Info "{{ information | dict2item }}""
  
 
   
