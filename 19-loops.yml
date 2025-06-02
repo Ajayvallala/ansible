@@ -9,6 +9,6 @@
     loop:
     - {name: nginx, state: present}
     - {name: mysql, state: present}
-    - {name: zip, stste: absent}
+    - {name: zip, state: absent}
      
   
