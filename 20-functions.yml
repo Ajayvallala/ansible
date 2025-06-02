@@ -7,6 +7,10 @@
   - name: print name
     ansible.builtin.debug:
      msg: "{{ person | default('Ajay') }}"
+
+  - name: printing names in list format
+    ansible.builtin.debug:
+     msg: Hello "{{ person | split(',') }}"
  
 
   
