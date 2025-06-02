@@ -1,0 +1,16 @@
+- name: Installing list of packages using loops
+  hosts: Target
+  become: true
+  tasks:
+  - name: Install list of packages
+    ansible.builtin.package:
+      name: "{{ items }}"
+      state: present
+    loops:
+    - nginx
+    - mysql
+    - zip
+       
+   
+
+

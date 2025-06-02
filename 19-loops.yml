@@ -1,0 +1,14 @@
+- name: Installing and uninstalling some packages
+  hosts: Target
+  become: true
+  tasks:
+  - name: Installing and uninstalling
+    ansible.builtin.package:
+     name: "{{ items.name }}"
+     state: "{{ items.state}}"
+    loops:
+    - {name: nginx, state: present}
+    - {name: mysql, state: present}
+    - {name: zip, stste: absent }
+     
+  
