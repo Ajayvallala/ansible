@@ -5,8 +5,8 @@
   - name: Installing nginx on RedHat OS
     when: ansible_os_family == "RedHat"
     ansible.builtin.dnf:
-     - name: nginx
-       state: present
+     name: nginx
+     state: present
     
 
   - name: Installing nginx on Debian OS
