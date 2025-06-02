@@ -5,8 +5,8 @@
   - name: Printing names
     ansible.builtin.debug:
      msg: "Hello {{ item }}"
-    loop:
-     - Ramesh
-     - Suresh
-     - Raheem
+     loop:
+      - Ramesh
+      - Suresh
+      - Raheem
   
