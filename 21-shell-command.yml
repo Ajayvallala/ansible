@@ -4,7 +4,8 @@
   - name: command mudule
     ansible.builtin.command: "ls -ltr"
     register: command_result
-    
+  - name: shell moudule
+    ansible.builtin.shell: "echo Hello > /tmp/output.txt"
   - name: Printing result
     ansible.builtin.debug:
      msg: "{{ command_result }}"
