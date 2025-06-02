@@ -4,4 +4,4 @@
   tasks:
   - name: converting to upper case
     ansible.builtin.debug:
-     msg: "hello ajay | upper"
+     msg: "{{ 'hello ajay' | upper }}"
