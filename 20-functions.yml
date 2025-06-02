@@ -27,6 +27,8 @@
       - {'key': 'Name', 'value': 'Ajay'}
       - {'key': 'Age', 'value': '27'}
       - {'key': 'Gender', 'value': 'Male'}
+    ansible.builtin.debug:
+     msg: Information "{{ information | items2dict }}"
  
 
   
