@@ -9,6 +9,6 @@
     register: shell_result
   - name: Printing result
     ansible.builtin.debug:
-     msg: "{{ command_result shell_result}}"
+     msg: "{{ command_result shell_result }}"
      
 
