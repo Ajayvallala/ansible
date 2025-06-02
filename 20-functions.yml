@@ -6,6 +6,6 @@
   tasks:
   - name: converting to upper case
     ansible.builtin.debug:
-     msg: Hello  "{{ persons | upper }}"
+     msg: Hello "{{ persons | split (',') }}"
 
   
