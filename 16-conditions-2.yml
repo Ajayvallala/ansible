@@ -2,7 +2,7 @@
   hosts: Target
   become: true
   tasks:
-  - name : Installing nginx on RedHat OS
+  - name: Installing nginx on RedHat OS
     when: "os_family == RedHat"
     ansible.builtin.dnf:
     - name: nginx
