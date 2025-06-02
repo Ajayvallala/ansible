@@ -1,4 +1,4 @@
-- name: Installing nginx based on OS Family"
+- name: Installing nginx based on OS Family
   hosts: Target
   become: true
   tasks:
