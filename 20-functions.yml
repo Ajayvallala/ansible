@@ -4,7 +4,7 @@
   tasks:
   - name: print name
     ansible.builtin.debug:
-     msg "{{ person | default('Ajay') }}"
+     msg: "{{ person | default('Ajay') }}"
  
 
   
