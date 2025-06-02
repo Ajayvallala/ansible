@@ -1,7 +1,11 @@
 - name: functions
   hosts: local
   connection: local
+  vars:
+   persons: "Ramesh,Suresh,Mahesh"
   tasks:
   - name: converting to upper case
     ansible.builtin.debug:
-     msg: "{{ 'hello ajay' | upper }}"
+     msg: "{{ Hello {{ persons }} | upper }}"
+
+  
