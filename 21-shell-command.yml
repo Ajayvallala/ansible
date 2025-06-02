@@ -1,0 +1,6 @@
+- name: shell and command moudule 
+  hosts: Target
+  tasks:
+  - name: command mudule
+    ansible.builtin.command: ls -ltr
+
