@@ -19,7 +19,7 @@
       Age: 27
       Gender: Male
     ansible.builtin.debug:
-     msg: Info "{{ information | dict2item }}""
+     msg: Info "{{ information | dict2items }}""
  
 
   
