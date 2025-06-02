@@ -1,4 +1,3 @@
----
 - name: Gathering_facts
   hosts: local
   connection: local
@@ -6,5 +5,3 @@
   - name: Printing Facts
     ansible.builtin.debug:
      msg: "{{ ansible_facts }}"
-
----
