@@ -1,14 +1,10 @@
 - name: functions
   hosts: local
   connection: local
-  vars:
-   persons: 
-    name: Ajay
-    age: 27
-    gender: Male
   tasks:
-  - name: converting to upper case
+  - name: print name
     ansible.builtin.debug:
-     msg: Hello "{{ persons | dict2items }}"
+     msg "{{ person }}"
+ 
 
   
