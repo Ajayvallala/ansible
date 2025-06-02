@@ -2,10 +2,13 @@
   hosts: local
   connection: local
   vars:
-   persons: "Ramesh,Suresh,Mahesh"
+   persons: 
+    name: Ajay
+    age: 27
+    gender: Male
   tasks:
   - name: converting to upper case
     ansible.builtin.debug:
-     msg: Hello "{{ persons | split (',') }}"
+     msg: Hello "{{ persons | dict2items }}"
 
   
