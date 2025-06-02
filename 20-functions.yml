@@ -20,6 +20,13 @@
       Gender: Male
     ansible.builtin.debug:
      msg: Info "{{ information | dict2items }}"
+
+  - name: convert list to map
+    vars:
+     information:
+      - {'key': 'Name', 'value': 'Ajay'}
+      - {'key': 'Age', 'value': '27'}
+      - {'key': 'Gender', 'value': 'Male'}
  
 
   
