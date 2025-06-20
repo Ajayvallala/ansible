@@ -8,9 +8,7 @@
     ignore_error: true
 
   - name: creating user
-    ansible.builtin.user:
-     name: roboshop
-     state: present
+    ansible.builtin.command: useradd roboshop
     when: result.rc != 0
 
   - name: user already exists
