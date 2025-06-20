@@ -8,8 +8,8 @@
 
   - name: creating user
     ansible.builtin.user:
-    - name: roboshop
-      state: present
+     name: roboshop
+     state: present
     when: result.rc != 0
 
   - name: user already exists
