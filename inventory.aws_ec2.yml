@@ -3,8 +3,6 @@ regions:
 - us-east-1
 keyed_groups:
 - key: tags.Name
-  prefix:
-  seperator:
 
 filters:
  tag.Name : Frontend
