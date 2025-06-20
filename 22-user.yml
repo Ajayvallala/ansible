@@ -1,0 +1,19 @@
+- name: "roboshop user creation"
+  hosts: Frontend
+  become: true
+  tasks:
+  - name: check user already exits or not
+    ansible.builtin.command: id roboshop
+    register: result
+
+  - name: creating user
+    ansible.builtin.user:
+    - name: roboshop
+      state: present
+    when: result.rc != 0
+
+  - name: user already exists
+    ansible.builtin.debug:
+     msg: "user already exists"
+    when: result.rc == 0
+
