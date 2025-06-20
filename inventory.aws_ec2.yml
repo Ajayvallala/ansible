@@ -5,7 +5,7 @@ keyed_groups:
 - key: tags.Name
 
 filters:
- tag.Name: Frontend
+ tag:Name: Frontend
  instance-state-name: running
 
 hostnames:
